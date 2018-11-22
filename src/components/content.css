@@ -1,0 +1,11 @@
+.display{
+	display: inline;
+	text-align: center;
+	margin:10px;
+}
+
+ul li {
+            float: left;
+            margin-left: 3em;
+            margin-bottom: 1em;
+        }

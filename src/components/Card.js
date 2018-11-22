@@ -1,4 +1,5 @@
 import React from 'react';
+import './card.css'
 import { Accordion, AccordionItem } from 'react-light-accordion';
 import 'react-light-accordion/demo/css/index.css';
 import Contents from './Contents'
@@ -24,7 +25,7 @@ class Card extends React.Component{
 	render(){
 		const {mutual} = this.state;
 		return(
-		<div>
+		<div className='display'>
 			<Accordion atomic={true}>
 			    <AccordionItem title={this.props.name}>
 				    <Contents

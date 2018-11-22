@@ -1,15 +1,18 @@
 import React from 'react';
+import './content.css'
  
  const Content = ({rating,riskometer,minimum_subscription,category,asset_aum,return_3yr,benchmark_text}) => {
  	return(
- 		<div>
- 			<p>Rating:{rating}/5</p>
- 			<p>Riskometer{riskometer}</p>
- 			<p>Return After 3 years: {return_3yr}</p>
- 			<p>Minimum Subscription: {minimum_subscription}</p>
- 			<p>Category: {category} </p>
- 			<p> Asset Aum: {asset_aum} </p>
- 			<p>Benchmark: {benchmark_text} </p>
+ 		<div className='display'>
+ 			<ul>
+ 				<li>Rating: {rating}/5 </li>
+ 				<li>Riskometer: {riskometer} </li>
+ 				<li>Minimum Subscription: {minimum_subscription}</li>
+ 				<li>Category: {category}</li>
+ 				<li>Asset Num: {asset_aum}</li>
+ 				<li>Return After 3yrs: {return_3yr}</li>
+ 				<li>Benchmark: {benchmark_text}</li>
+ 			</ul>
  		</div>
  	)
  }
